@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Cards</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Course card styles */
+    .course-card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .course-card img {
+      width: 100%;
+      height: auto;
+      border-bottom: 1px solid #ccc;
+    }
+    .course-card-content {
+      padding: 20px;
+    }
+    .course-card h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    .course-card p {
+      margin: 0;
+      color: #666;
+    }
+    .course-card a {
+      display: block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .course-card a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Available Courses</h1>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='intro.jpg') }}" alt="Introduction to Programming">
+      <div class="course-card-content">
+        <h2>Introduction to Programming</h2>
+        <p>An introductory course to programming concepts using a popular programming language.</p>
+        <p>Duration: 6 weeks</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='web-development.jpg') }}" alt="Web Development">
+      <div class="course-card-content">
+        <h2>Web Development</h2>
+        <p>Learn to build interactive websites using HTML, CSS, and JavaScript.</p>
+        <p>Duration: 8 weeks</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='machine-learning.jpg') }}" alt="Machine Learning">
+      <div class="course-card-content">
+        <h2>Machine Learning</h2>
+        <p>Explore the fundamentals of machine learning algorithms and applications.</p>
+        <p>Prerequisites: Basic programming knowledge</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='graphic-design.jpg') }}" alt="Graphic Design">
+      <div class="course-card-content">
+        <h2>Graphic Design</h2>
+        <p>Learn design principles and create visually appealing graphics.</p>
+        <p>No prerequisites required</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='digital-marketing.jpg') }}" alt="Digital Marketing">
+      <div class="course-card-content">
+        <h2>Digital Marketing</h2>
+        <p>Explore digital marketing strategies and tools for online promotion.</p>
+        <p>No prerequisites required</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='database-management.jpg') }}" alt="Database Management">
+      <div class="course-card-content">
+        <h2>Database Management</h2>
+        <p>Learn about database design, implementation, and management.</p>
+        <p>Prerequisites: Basic programming knowledge</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='mobile-app-development.jpg') }}" alt="Mobile App Development">
+      <div class="course-card-content">
+        <h2>Mobile App Development</h2>
+        <p>Build mobile apps for iOS and Android platforms using popular frameworks.</p>
+        <p>Prerequisites: Intermediate programming skills</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='cyber-security.jpg') }}" alt="Cyber Security">
+      <div class="course-card-content">
+        <h2>Cyber Security</h2>
+        <p>Explore techniques to secure networks, systems, and data from cyber threats.</p>
+        <p>Prerequisites: Basic networking knowledge</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <img src="{{ url_for('static', filename='data-analysis.jpg') }}" alt="Data Analysis">
+      <div class="course-card-content">
+        <h2>Data Analysis</h2>
+        <p>Learn statistical methods and tools for analyzing and interpreting data.</p>
+        <p>No prerequisites required</p>
+        <a href="main.html">Enroll Now</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

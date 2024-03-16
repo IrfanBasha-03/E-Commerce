@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Reservation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .course-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Courses Reservation</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="coures.html">Courses</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+   <section>
+    <h1>popoular courses</h1>
+    <div class="course-card">
+        <img src="{{ url_for('static', filename='intro.jpg') }}" alt="Introduction to Programming">
+        <div class="course-card-content">
+          <h2>Introduction to Programming</h2>
+          <p>An introductory course to programming concepts using a popular programming language.</p>
+          <p>Duration: 6 weeks</p>
+          <a href="main.html">Enroll Now</a>
+        </div>
+      </div>
+  
+      <div class="course-card">
+        <img src="{{ url_for('static', filename='web-development.jpg') }}" alt="Web Development">
+        <div class="course-card-content">
+          <h2>Web Development</h2>
+          <p>Learn to build interactive websites using HTML, CSS, and JavaScript.</p>
+          <p>Duration: 8 weeks</p>
+          <a href="main.html">Enroll Now</a>
+        </div>
+      </div>
+  
+      <div class="course-card">
+        <img src="{{ url_for('static', filename='machine-learning.jpg') }}" alt="Machine Learning">
+        <div class="course-card-content">
+          <h2>Machine Learning</h2>
+          <p>Explore the fundamentals of machine learning algorithms and applications.</p>
+          <p>Prerequisites: Basic programming knowledge</p>
+          <a href="main.html">Enroll Now</a>
+        </div>
+      </div>
+  
+        
+
+    </section>
+
+
+    <footer>
+        <p>&copy; 2024 Courses Reservation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
